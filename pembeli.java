@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class customer {
+public class pembeli {
     public void showMenu() {
         Scanner scanner = new Scanner(System.in);
         boolean exit = false;
