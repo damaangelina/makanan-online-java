@@ -16,6 +16,7 @@ Program Java ini dirancang untuk dua jenis user dengan akses yang berbeda, yaitu
 2. Customer akan masuk ke halaman menu Customer dan diberikan akses untuk melihat restoran, membuat pesanan, melihat pesanan dan kembali ke login.
 
 # UML
+![image](https://github.com/tikakurnsri/makanan-online-java/assets/147127000/ee1f496b-9260-473e-98b6-915393be3b25)
 
 # Alur Program
 1. Halaman Main
