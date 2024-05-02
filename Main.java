@@ -21,7 +21,7 @@ public class Main {
             System.out.print("Masukkan pilihan anda: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Mengonsumsi newline
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
@@ -52,7 +52,6 @@ public class Main {
         }
     }
 
-    // Metode untuk memvalidasi kata sandi berdasarkan tipe pengguna
     private static boolean validatePassword(Scanner scanner, String userType) {
         System.out.print("Masukkan kata sandi untuk " + userType + ": ");
         String password = scanner.nextLine();
