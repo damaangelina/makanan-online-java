@@ -57,3 +57,6 @@ setelah melakukan pemesanan, pembeli juga dapat melihat pesanan yang sudah dipes
 10. Kembali ke Halaman Login 
 Setelah melakukan pemesanan, pembeli dapat kembali ke halamat login awal
 ![WhatsApp Image 2024-05-03 at 03 17 00_a4104333](https://github.com/tikakurnsri/makanan-online-java/assets/147127000/f5716613-9a51-4c3d-a80e-21d44c71f23c)
+
+#Penutup
+Mohon maaf jika program kami masih jauh dari kata sempurna, Terimakasih. 
