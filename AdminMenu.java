@@ -15,7 +15,7 @@ public class AdminMenu {
             System.out.println("| 3. Hapus Restoran                                |");
             System.out.println("| 4. Kembali ke Login                              |");
             System.out.println("| ================================================ |");
-            System.out.println("Masukkan Pilihan Anda: ");
+            System.out.print("Masukkan Pilihan Anda: ");
 
             int choice = scanner.nextInt();
             System.out.println("");
