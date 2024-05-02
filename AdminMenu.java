@@ -7,13 +7,18 @@ public class AdminMenu {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Admin Menu:");
-            System.out.println("1. Lihat Restoran");
-            System.out.println("2. Tambah Restoran");
-            System.out.println("3. Hapus Restoran");
-            System.out.println("4. Kembali ke Login");
+            System.out.println("| ================================================ |");
+            System.out.println("|                      Admin Menu                  |");
+            System.out.println("| ================================================ |");
+            System.out.println("| 1. Lihat Restoran                                |");
+            System.out.println("| 2. Tambah Restoran                               |");
+            System.out.println("| 3. Hapus Restoran                                |");
+            System.out.println("| 4. Kembali ke Login                              |");
+            System.out.println("| ================================================ |");
+            System.out.println("Masukkan Pilihan Anda: ");
 
             int choice = scanner.nextInt();
+            System.out.println("");
 
             switch (choice) {
                 case 1:
