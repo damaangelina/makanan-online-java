@@ -29,4 +29,14 @@ public class Restaurant {
     public void addMenu(Menu menu) {
         menus.add(menu);
     }
+
+    public Menu findMenuById(int id) {
+        // Mencari menu berdasarkan ID
+        for (Menu menu : menus) {
+            if (menu.getId() == id) {
+                return menu;
+            }
+        }
+        return null; // Jika tidak ditemukan
+    }
 }
