@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class OrderData {
     private static List<Order> orders = new ArrayList<>();
 
-    // Membuat pesanan baru
     public static void createOrder() {
         Scanner scanner = new Scanner(System.in);
 
@@ -18,7 +17,6 @@ public class OrderData {
         System.out.print("Nama Restoran: ");
         String restaurantName = scanner.nextLine();
 
-        // Tambahkan informasi lain seperti item yang dipesan, kuantitas, dan sebagainya
         System.out.print("Item Pesanan: ");
         String orderItem = scanner.nextLine();
 
@@ -31,7 +29,6 @@ public class OrderData {
         System.out.println("Pesanan berhasil dibuat!");
     }
 
-    // Menampilkan daftar pesanan
     public static void displayOrders() {
         if (orders.isEmpty()) {
             System.out.println("Tidak ada pesanan.");
