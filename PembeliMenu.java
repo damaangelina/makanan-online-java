@@ -7,12 +7,14 @@ public class PembeliMenu {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Pembeli Menu:");
-            System.out.println("1. Lihat Restoran");
-            System.out.println("2. Buat Pesanan");
-            System.out.println("3. Lihat Pesanan");
-            System.out.println("4. Kembali ke Login");
-
+            System.out.println("| ================================================ |");
+            System.out.println("| Anda ingin melakukan apa?                        |");
+            System.out.println("| 1. Lihat Restoran                                |");
+            System.out.println("| 2. Buat Pesanan                                  |");
+            System.out.println("| 3. Lihat Pesanan                                 |");
+            System.out.println("| 4. Kembali ke Login                              |");
+            System.out.println("| ================================================ |");
+            System.out.print("Masukkan Pilihan Anda: ");
             int choice = scanner.nextInt();
 
             switch (choice) {
@@ -26,7 +28,7 @@ public class PembeliMenu {
                     OrderData.displayOrders();
                     break;
                 case 4:
-                    return;  // Return to Login
+                    return;
                 default:
                     System.out.println("Pilihan tidak valid.");
             }

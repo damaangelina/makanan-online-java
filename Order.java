@@ -1,41 +1,54 @@
 package com.restaurant.system;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class Order {
     private String customerName;
-    private String restaurantName;
-    private String orderItem;
-    private int quantity;
-    private boolean completed;
+    private Restaurant restaurant;
+    private List<OrderDetail> orderDetails;
+    private double totalPrice;
+    private double distance; // jarak ke lokasi antar
 
-    public Order(String customerName, String restaurantName, String orderItem, int quantity) {
+    public Order(String customerName, Restaurant restaurant, List<OrderDetail> orderDetails, double distance) {
         this.customerName = customerName;
-        this.restaurantName = restaurantName;
-        this.orderItem = orderItem;
-        this.quantity = quantity;
-        this.completed = false;  // Default status
+        this.restaurant = restaurant;
+        this.orderDetails = orderDetails;
+        this.totalPrice = calculateTotalPrice();
+        this.distance = distance;
     }
 
     public String getCustomerName() {
         return customerName;
     }
 
-    public String getRestaurantName() {
-        return restaurantName;
+    public Restaurant getRestaurant() {
+        return restaurant;
     }
 
-    public String getOrderItem() {
-        return orderItem;
+    public List<OrderDetail> getOrderDetails() {
+        return orderDetails;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public double getDistance() {
+        return distance;
+    }
+
+    private double calculateTotalPrice() {
+        double total = 0;
+        for (OrderDetail detail : orderDetails) {
+            total += detail.getTotalPrice();
+        }
+        return total;
     }
 
     public boolean isCompleted() {
-        return completed;
-    }
-
-    public void setCompleted(boolean completed) {
-        this.completed = completed;
+        // logika untuk mengetahui apakah pesanan sudah selesai
+        return false;
     }
 }
